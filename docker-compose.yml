@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  azp-agent:
+    image: ghcr.io/cubinet-code/azp-agent:main
+    environment:
+        - AZP_URL=${AZP_URL}
+        - AZP_POOL=${AZP_POOL}
+        - AZP_TOKEN=${AZP_TOKEN}
+    pull_policy: always
+
